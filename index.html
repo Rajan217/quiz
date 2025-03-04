@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App with Pie Chart</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div id="quiz-container">
+        <div id="question-container">
+            <h2 id="question-text">Question will appear here</h2>
+            <ul id="choices-container">
+                <li><input type="radio" name="choice" value="0" id="choice0"> <label for="choice0">Choice 1</label></li>
+                <li><input type="radio" name="choice" value="1" id="choice1"> <label for="choice1">Choice 2</label></li>
+                <li><input type="radio" name="choice" value="2" id="choice2"> <label for="choice2">Choice 3</label></li>
+                <li><input type="radio" name="choice" value="3" id="choice3"> <label for="choice3">Choice 4</label></li>
+            </ul>
+        </div>
+        
+        <button id="submit-btn">Submit Answer</button>
+
+        <!-- Result container with pie chart -->
+        <div id="result-container" style="display: none;">
+            <h3 id="result-text">Your result will appear here.</h3>
+            <canvas id="pie-chart" width="300" height="300"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
